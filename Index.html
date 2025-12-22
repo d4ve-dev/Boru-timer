@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boru-timer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Boru-timer</h1>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="time-run" id="timeRun">
+                <div class="countdownContainer">
+                    <div id="subContainer">
+
+                        <div class="box">
+                            <span class="label">Days</span>
+                            <span id="days"></span>
+                        </div>
+
+                        <span class="colon">:</span>
+
+                        <div class="box">
+                            <span class="label">Hours</span>
+                            <span id="hours"></span>
+                        </div>
+
+                        <span class="colon">:</span>
+
+                        <div class="box">
+                            <span class="label">Minutes</span>
+                            <span id="minutes"></span>
+                        </div>
+
+                        <span class="colon">:</span>
+
+                        <div class="box">
+                            <span class="label">Seconds</span>
+                            <span id="seconds"></span>
+                        </div>
+
+                    </div>    
+
+                    <span class="nextCh">...Until next chapter</span>
+                </div>
+
+                <div class="shadow">
+                    <img class="waiting" src="waiting.jpg">
+                </div>
+            </div>
+
+
+            <div class="time-up hidden" id="timeUp">
+                <div class="shadow_1">
+                    <img class="done" src="done.jpg">
+                </div>
+                <div class="buttons">
+                    <button id="cancelBtn">Cancel</button>
+                    <button id="readBtn">Read</button>
+                </div>
+            </div>      
+        </div>
+
+        <div class="footer"></div>
+            <p> By <span id="dave">Dave</span>. All rights reserved.</p>  
+        </div>
+
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

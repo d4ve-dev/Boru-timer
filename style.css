@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Geo, Arial;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 10px;
+}
+.header {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+
+}
+.container {    
+    border: 7px solid black;
+    border-radius: 30px;
+    box-shadow: 10px 10px;
+    padding: 24px;
+}
+.time-run{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.countdownContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    border: 5px solid black;
+    border-radius: 30px;
+    width: 550px;
+}
+#subContainer {
+    display: flex;
+    gap: 30px;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+.label, .nextCh  {
+    font-size: 25px;
+}
+#days, #hours, #minutes, #seconds {
+    font-weight: bold;
+    font-size: 40px;
+}
+.colon {
+    margin: 0;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.waiting {
+    border: 3px solid black;
+    width: 300px;
+    max-width: 100%;
+    position: relative;
+    z-index: -1;
+    display: block;
+}
+.shadow {
+    display: inline-block;
+    position: relative;
+    box-shadow:inset 7px 7px 5px rgba(0, 0, 0, 0.3);
+}
+.hidden {
+    display: none !important;
+}
+
+/* SECTION II --- TIME UP */                                              
+
+.time-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 550px;
+    height: 519.19px;
+} 
+.done {
+    width: 250px;
+    max-width: 100%;
+    border: 3px solid black;
+    position: relative;
+    z-index: -1;
+    display: block;
+}
+.shadow_1 {
+    display: inline-block;
+    position: relative;
+    box-shadow:inset 7px 7px 5px rgba(0, 0, 0, 0.3);
+}     
+.buttons {
+    display: flex;
+    gap: 250px;
+}
+button {
+    padding: 10px 15px;
+    font-size: 30px;
+    font-family: Geo, Arial;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+#cancelBtn {
+    background-color: black;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+#readBtn {
+    background-color: white;
+    color: black;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+#cancelBtn:hover {
+    background-color: white;
+    color: black;
+}
+#readBtn:hover {
+    background-color: black;
+    color: white;
+}
+
+#cancelBtn:active {
+    background-color: black;
+    color: white;
+    transform: scale(0.5);
+}
+#readBtn:active {
+    transform: scale(0.5);
+}
+
+#dave {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+#dave:hover {
+    opacity: 0.8;
+}
+
+.footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+
+
