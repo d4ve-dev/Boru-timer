@@ -30,7 +30,7 @@ function formatMs(ms) {
 
 function updateCountdown() {
 
-    const msLeft = getMonthlyCountdown(20, 19, 10, 0);
+    const msLeft = getMonthlyCountdown(20, 16, 0, 0);
 
     const timeRun = document.getElementById("timeRun");
     const timeUp = document.getElementById("timeUp");

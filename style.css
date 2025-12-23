@@ -14,14 +14,24 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 .header {
     background-color: black;
     color: white;
     padding: 10px;
-    text-align: center;
-
+}
+.headerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leaf {
+    width: 80px;
+    max-width: 100%;
+}
+.title {
+    font-size: 50px;
 }
 .container {    
     border: 7px solid black;
@@ -159,10 +169,7 @@ button {
     opacity: 0.8;
 }
 
-.footer {
-    margin-top: 20px;
-    text-align: center;
-}
+
 
 /* hello */
 
