@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -15,11 +15,15 @@ body {
     height: 100vh;
     flex-direction: column;
     gap: 15px;
+    padding-top: 120px;
 }
 .header {
     background-color: black;
     color: white;
     padding: 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 .headerDiv {
     display: flex;
@@ -38,6 +42,7 @@ body {
     border-radius: 30px;
     box-shadow: 10px 10px;
     padding: 24px;
+    overflow: hidden;
 }
 .time-run{
     display: flex;
@@ -103,7 +108,18 @@ body {
     gap: 20px;
     width: 550px;
     height: 519.19px;
-} 
+}
+.time-up {animation: swipeDown 0.9s ease-out}
+@keyframes swipeDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 .done {
     width: 250px;
     max-width: 100%;
@@ -158,6 +174,20 @@ button {
 #readBtn:active {
     transform: scale(0.5);
 }
+#cancelBtn {animation: pulse 2s infinite;}
+#readBtn {animation: pulse 2s infinite;}
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 #dave {
     color: blue;
@@ -169,10 +199,49 @@ button {
     opacity: 0.8;
 }
 
-
-
-/* hello */
-
-
+@media (max-width: 600px) {
+    .main {
+        padding-top: 100px;
+    }
+    .container {
+        width: 90%;
+        padding: 15px;
+   
+    }
+    .countdownContainer, .time-up {
+        width: 95%;
+        height: auto;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .leaf {
+        width: 50px;
+    }
+    #subContainer {
+        gap: 15px;
+    }
+    #days, #hours, #minutes, #seconds, .colon {
+        font-size: 25px;
+    }
+    .colon {
+        margin-top: 20px;
+    }
+    .label, .nextCh {
+        font-size: 18px;
+    }
+    .buttons {
+        gap: 20px;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    button {
+        width: 100%;
+    }
+    .done, .waiting {
+        width: 180px;
+    }
+}
 
 

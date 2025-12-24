@@ -1,5 +1,9 @@
 
 let monthOffset = 0;
+const targetDay = 24;
+const targetHour = 21;
+const targetMinute = 53;
+const targetSecond = 0;
 
 function getMonthlyCountdown(day, hour = 0,  minute = 0, second = 0) {
     
@@ -30,7 +34,7 @@ function formatMs(ms) {
 
 function updateCountdown() {
 
-    const msLeft = getMonthlyCountdown(20, 16, 0, 0);
+    const msLeft = getMonthlyCountdown(targetDay, targetHour, targetMinute, targetSecond);
 
     const timeRun = document.getElementById("timeRun");
     const timeUp = document.getElementById("timeUp");
@@ -68,6 +72,10 @@ document.getElementById("cancelBtn").addEventListener("click", () => {
 document.getElementById("readBtn").addEventListener("click", () => {
     window.location.href = "https://mangaplus.shueisha.co.jp/titles/100269"; 
 });
+
+if (getMonthlyCountdown(targetDay, targetHour, targetMinute, targetSecond) < 0) {
+    monthOffset++;
+}
 
 updateCountdown();
 setInterval(updateCountdown, 1000);
