@@ -1,12 +1,15 @@
 
 let monthOffset = 0;
-const targetDay = 24;
-const targetHour = 21;
+const targetDay = 18;
+const targetHour = 18;
 const targetMinute = 53;
 const targetSecond = 0;
 
+document.querySelector("svg").classList.add("active");
+
+
 function getMonthlyCountdown(day, hour = 0,  minute = 0, second = 0) {
-    
+    1
     const now = new Date();
 
     const target = new Date(
