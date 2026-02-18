@@ -1,8 +1,8 @@
 
 let monthOffset = 0;
-const targetDay = 18;
-const targetHour = 22;
-const targetMinute = 33;
+const targetDay = 20;
+const targetHour = 16;
+const targetMinute = 0;
 const targetSecond = 0;
 
 document.querySelector("svg").classList.add("active");
