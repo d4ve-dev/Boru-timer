@@ -25,7 +25,7 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: fit-content;
+    width: 58%;
     padding: 5px 35px;
     border-radius: 50px;
     display: flex;
@@ -224,11 +224,28 @@ button {
     opacity: 0.8;
 }
 
+.short {
+    display: none;
+}
+
+
 /* SECTION II --- MEDIA QUERY*/ 
+
+@media (max-width: 457px) {
+    .header {
+        padding: 10px;
+    }
+    .long {
+    display: none;
+    }
+    .short {
+        display: inline;
+    }
+}
 
 @media (max-width: 735px) {
     .title {
-        font-size: 25px;
+        font-size: 30px;
     }
     svg {
         width: 50px;
@@ -245,7 +262,7 @@ button {
    
     }
     .countdownContainer, .time-up {
-        width: 95%;
+        width: 99%;
         height: auto;
     }
     .title {

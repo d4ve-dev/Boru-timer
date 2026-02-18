@@ -1,8 +1,8 @@
 
 let monthOffset = 0;
 const targetDay = 18;
-const targetHour = 18;
-const targetMinute = 53;
+const targetHour = 22;
+const targetMinute = 33;
 const targetSecond = 0;
 
 document.querySelector("svg").classList.add("active");
@@ -73,7 +73,7 @@ document.getElementById("cancelBtn").addEventListener("click", () => {
 });
 
 document.getElementById("readBtn").addEventListener("click", () => {
-    window.location.href = "https://mangaplus.shueisha.co.jp/titles/100269"; 
+    window.location.href = "https://lnnk.click/🌀⚡"; 
 });
 
 if (getMonthlyCountdown(targetDay, targetHour, targetMinute, targetSecond) < 0) {
